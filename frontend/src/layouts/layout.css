@@ -2,14 +2,16 @@ main{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  position: relative;
+  align-items: center;
 }
 
 .container{
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 2rem;
   padding-left: 2rem;
+  padding-right: 2rem;
   flex: 1 1 0%;
 }
 
@@ -20,8 +22,6 @@ main{
 }
 
 
-
-
 .section__padding {
   padding: 4rem 6rem;
 }
@@ -30,14 +30,6 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.app__bg {
-  background: url('./assets/bg.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: repeat;
-  background-attachment: fixed;
 }
 
 .app__wrapper {
@@ -77,16 +69,15 @@ main{
 }
 
 .custom__button {
-  background-color: var(--color-crimson);
-    color: var(--color-black);
-    font-family: var(--font-base);
+  background-color: transparent;
+    color: var(--color-white);
+    font-family: var(--font-alt);
     font-weight: 700;
     letter-spacing: 0.04em;
     line-height: 28px;
     font-size: 16px;
-    padding: 0.5rem 1.5rem;
-    border-radius: 1px;
-    border: none;
+    padding: 1rem 1.5rem;
+    border: 1px solid var(--color-white);
     outline: none;
     cursor: pointer;
 }
@@ -94,45 +85,38 @@ main{
 .p__greatvibes {
   font-family: var(--font-base);
   color: var(--color-white);
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 0.04em;
-  text-transform: capitalize;
   font-feature-settings: 'tnum' on, 'lnum' on;
   line-height: 29.9px;
-  font-size: 23px;
 }
 
 .p__montserrat {
   font-family: var(--font-alt);
-  color: var(--color-white);
+  color: var(--color-black);
   font-weight: 400;
   letter-spacing: 0.04em;
-  text-transform: capitalize;
   line-height: 28px;
-  font-size: 16px;
 }
 
-.headtext__cormorant {
-  font-family: var(--font-base);
-  color: var(--color-golden);
-  font-size: 64px;
-  line-height: 83.2px;
+.headtext__montserrat {
+  font-family: var(--font-alt);
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 28px;
   letter-spacing: 0.04em;
   text-transform: capitalize;
 }
 
-.spoon__img {
-  width: 45px;
-}
-
-@media screen and (min-width: 2000px) {
+/* @media screen and (min-width: 2000px) {
   .custom__button,
-  .p__cormorant {
+  .p__greatvibes {
     font-size: 37px;
     line-height: 67px;
   }
 
-  .p__opensans {
+  .p__montserrat {
     font-size: 30px;
     line-height: 50px;
   }
@@ -145,8 +129,8 @@ main{
   .spoon__img {
     width: 80px;
   }
-}
-
+} */
+/* 
 @media screen and (max-width: 1150px) {
   .app__wrapper {
     flex-direction: column;
@@ -163,11 +147,16 @@ main{
   .app__wrapper_img img {
     width: 100%;
   }
-}
+} */
 
 @media screen and (max-width: 850px) {
   .section__padding {
     padding: 4rem;
+  }
+
+  .headtext__montserrat {
+    font-size: 2rem;
+    line-height: 70px;
   }
 }
 
@@ -176,26 +165,21 @@ main{
     padding: 4rem 2rem;
   }
   
-  .p__cormorant {
+  /* .p__greatvibes {
     font-size: 21px;
   }
 
-  .p__opensans {
+  .p__montserrat {
     font-size: 14px;
-  }
+  } */
 }
 
 @media screen and (max-width: 450px) {
-  .p__opensans {
+  /* .p__montserrat {
     font-size: 12px;
   }
 
-  .p__cormorant {
+  .p__greatvibes {
     font-size: 19px;
-  }
-
-  .headtext__cormorant {
-    font-size: 45px;
-    line-height: 70px;
-  }
+  } */
 }

@@ -1,0 +1,75 @@
+.app__hero {
+  width: 100%;
+  min-height: 800px;
+  position: relative; /* Position relative to contain the absolute positioned content */
+  overflow: hidden; /* Hide overflow */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.app__hero video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire area while maintaining aspect ratio */
+  z-index: 1; /* Ensures the video stays behind the content */
+}
+
+.app__hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  z-index: 2; /* Places the overlay above the video but below the content */
+}
+
+.app__hero-content {
+  position: relative; /* Positioned relative to ensure it's above the video */
+  z-index: 2; /* Places the content above the video */
+  width: 100%;
+  text-align: center;
+}
+
+.app__hero-content h1{
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.app__hero-content h2{
+  font-size: 4rem;
+  color: var(--color-golden);
+  text-align: left;
+}
+
+.app__hero-btn{
+  background: linear-gradient(to bottom, transparent 50%, var(--color-brown) 50%);
+  background-size: 100% 200%;
+  background-position: 0 0%;
+  transition: background-position 0.5s ease;
+}
+
+.app__hero-btn:hover{
+  background-position: 0 100%;
+}
+
+@media screen and (max-width: 850px){
+  .app__hero-content h1{
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .app__hero-content h2{
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 650px){
+  .app__hero{
+    min-height: 500px;
+  }
+}

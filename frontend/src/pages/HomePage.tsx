@@ -1,5 +1,9 @@
+import Feature from "../components/Feature/Feature";
+
 const HomePage = () => {
-  return <><span></span></>
+  return <>
+    <Feature/>
+  </>
 }
 
 export default HomePage;
