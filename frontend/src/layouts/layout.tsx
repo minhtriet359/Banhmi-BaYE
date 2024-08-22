@@ -12,7 +12,7 @@ const layout = ({children}: Props) => {
     <main>
       <Navbar/>
       <Hero/>
-      <div className="container">{children}</div>
+      <div>{children}</div>
       <Footer/>
     </main>
   )

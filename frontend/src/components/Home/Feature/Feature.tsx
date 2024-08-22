@@ -1,8 +1,8 @@
 import './Feature.css'
 import FeatureCard from './FeatureCard';
-import icon1 from '../../assets/feature-icon1.webp'
-import icon2 from '../../assets/feature-icon2.webp'
-import icon3 from '../../assets/feature-icon3.webp'
+import icon1 from '../../../assets/feature-icon1.webp'
+import icon2 from '../../../assets/feature-icon2.webp'
+import icon3 from '../../../assets/feature-icon3.webp'
 
 const CARD_CONTENT=[{
   img: icon1,
@@ -25,7 +25,7 @@ const Feature = () => {
   <section className="app__home-feature">
     <h2 className="p__greatvibes">Tasty & Fresh</h2>
     <h1 className='p__montserrat'>EXPERIENCE THE AUTHENTIC TASTE OF VIETNAM</h1>
-    <div className='flex__center app__home-feature_card_container'>
+    <div className='container flex__center app__home-feature_card_container'>
       {CARD_CONTENT.map((card, index)=>(
         <FeatureCard key={index} img={card.img} title={card.title} description={card.description}/>))}
     </div>

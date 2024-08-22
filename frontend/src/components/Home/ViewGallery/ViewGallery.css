@@ -1,0 +1,78 @@
+.app__home-view-gallery {
+  width: 100vw;
+  background-color: var(--color-brown);
+}
+
+.app__home-view-gallery-container{
+  gap: 1rem;
+}
+
+.app__home-view-gallery-box,  .app__home-view-gallery-link{
+  flex: 1;
+  flex-direction: column;
+  overflow: hidden;
+  border: 5px solid white;
+  text-align: center;
+  margin: 4rem 0;
+  aspect-ratio: 1.5;
+}
+
+.app__home-view-gallery-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.app__home-view-gallery-box:hover img{
+  transform: scale(1.1);
+}
+
+.app__home-view-gallery-link{
+  transition: transform 0.5s ease;
+}
+
+.app__home-view-gallery-link:hover p{
+  transform: scale(1.2);
+}
+
+.app__home-view-gallery-link p {
+  margin: 0.5rem 0;
+}
+
+.app__home-view-gallery-link .p__greatvibes{
+  font-size: 3rem;
+}
+
+.app__home-view-gallery-link .headtext__montserrat{
+  margin-top: 1rem;
+  font-size: 4rem;
+}
+
+/* Ensure all boxes have the same height by stretching */
+.app__home-view-gallery-box,
+.app__home-view-gallery-link {
+  flex-basis: 0; /* Allows the items to be flexible */
+}
+
+@media screen and (max-width: 850px){
+  .app__home-view-gallery-link .p__greatvibes{
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+  }
+
+  .app__home-view-gallery-link .headtext__montserrat{
+    font-size: 2.5rem;
+  }
+}
+
+
+@media screen and (max-width: 650px){
+  .app__home-view-gallery-container{
+    display: block;
+  }
+
+  .app__home-view-gallery-link {
+    aspect-ratio: 0;
+  }
+}
