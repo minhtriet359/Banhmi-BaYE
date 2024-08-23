@@ -1,12 +1,24 @@
 .app__navbar{
   width: 100%;
+  background-color: transparent;
+  padding: 0.5rem 0;
+  position: absolute;
+  z-index: 1000;
+  transition: 0.5s ease;
+}
+
+.app__navbar .container{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: transparent;
-  padding: 1rem 0;
-  position: absolute;
-  z-index: 1000;
+}
+
+.navbar-scrolled{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(30,30,30);
+  transition: 0.5s ease;
 }
 
 .app__navbar-logo {
@@ -16,7 +28,7 @@
 }
 
 .app__navbar-logo img {
-  width: 120px;
+  width: 100px;
 }
 
 .app__navbar-logo .navbar-slogan{
@@ -104,12 +116,6 @@
   color: var(--color-white);
 }
 
-@media(min-width: 1400px){
-  .app__navbar{
-    max-width: 1400px;
-  }
-}
-
 @media screen and (max-width: 1150px){
   .app__navbar-links{
     display: none;
@@ -121,9 +127,5 @@
   
   .app__navbar-smallscreen{
     display: flex;
-  }
-
-  .app__navbar-logo img{
-    width: 110px;
   }
 }
