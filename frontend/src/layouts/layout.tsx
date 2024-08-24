@@ -11,7 +11,6 @@ const layout = ({children}: Props) => {
   return (
     <main>
       <Navbar/>
-      <Hero/>
       <div>{children}</div>
       <Footer/>
     </main>

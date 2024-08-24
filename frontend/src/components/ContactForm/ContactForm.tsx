@@ -3,10 +3,10 @@ import { useState, ChangeEvent, FormEvent } from 'react';
 import './ContactForm.css';
 
 type Props ={
-  isHomePage: boolean;
+  isHomePage?: boolean;
 }
 
-const ContactForm = ({isHomePage}: Props) => {
+const ContactForm = ({isHomePage = false}: Props) => {
   const [formData, setFormData] = useState({
         name:'',
         phone:'',

@@ -1,11 +1,15 @@
 .app__hero {
   width: 100%;
-  min-height: 800px;
+  min-height: 600px;
   position: relative; /* Position relative to contain the absolute positioned content */
   overflow: hidden; /* Hide overflow */
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
+}
+
+.app__hero-homepage{
+  min-height: 800px;
 }
 
 .app__hero video {
@@ -16,7 +20,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover; /* Ensures the video covers the entire area while maintaining aspect ratio */
-  z-index: 1; /* Ensures the video stays behind the content */
+  z-index: -1; /* Ensures the video stays behind the content */
 }
 
 .app__hero-overlay {
@@ -70,6 +74,10 @@
 
 @media screen and (max-width: 650px){
   .app__hero{
+    min-height: 500px;
+  }
+
+  .app__hero-homepage{
     min-height: 500px;
   }
 }

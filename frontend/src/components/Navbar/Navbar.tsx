@@ -1,6 +1,6 @@
 import './Navbar.css';
 import Baye from '../../assets/Baye.png';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { useEffect, useState } from 'react';
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
@@ -27,10 +27,12 @@ const Navbar = () => {
   return (
     <nav className={`app__navbar ${scrolled?'navbar-scrolled' : ''}`}>
       <div className='container'>
-        <div className='app__navbar-logo'>
-          <img  src={Baye} alt="app logo"/>
-          <span className='p__greatvibes navbar-slogan'>Every bite is a delight!!!</span>
-        </div>
+        <Link to='/'>
+          <div className='app__navbar-logo'>
+            <img  src={Baye} alt="app-logo"/>
+            <span className='p__greatvibes navbar-slogan'>Every bite is a delight!!!</span>
+          </div>
+        </Link>
         <ul className='app__navbar-links'>
           <li className='p__montserrat'>
             <NavLink to="/" className={({ isActive }) => isActive ? "active-link" : ""}>HOME</NavLink>
@@ -58,23 +60,23 @@ const Navbar = () => {
               <MdOutlineRestaurantMenu fontSize={27} className="overlay__close" onClick={() => setToggleMenu(false)} />
               <ul className="app__navbar-smallscreen_links">
                 <li className='p__montserrat'>
-                  <NavLink to="/" className={({ isActive }) => isActive ? "active-link" : ""}>HOME</NavLink>
+                  <NavLink to="/" className={({ isActive }) => isActive ? "active-link" : ""} onClick={() => setToggleMenu(false)}>HOME</NavLink>
                 </li>
                 <li className='p__montserrat'>
-                  <NavLink to="/about-us" className={({ isActive }) => isActive ? "active-link" : ""}>ABOUT</NavLink>
+                  <NavLink to="/about-us" className={({ isActive }) => isActive ? "active-link" : ""} onClick={() => setToggleMenu(false)}>ABOUT</NavLink>
                 </li>
                 <li className='p__montserrat'>
-                  <NavLink to="/gallery" className={({ isActive }) => isActive ? "active-link" : ""}>GALLERY</NavLink>
+                  <NavLink to="/gallery" className={({ isActive }) => isActive ? "active-link" : ""} onClick={() => setToggleMenu(false)}>GALLERY</NavLink>
                 </li>
                 <li className='p__montserrat'>
-                  <NavLink to="/menu" className={({ isActive }) => isActive ? "active-link" : ""}>MENU</NavLink>
+                  <NavLink to="/menu" className={({ isActive }) => isActive ? "active-link" : ""} onClick={() => setToggleMenu(false)}>MENU</NavLink>
                 </li>
                 <li className='p__montserrat'>
-                  <NavLink to="/contact" className={({ isActive }) => isActive ? "active-link" : ""}>CONTACT</NavLink>
+                  <NavLink to="/contact" className={({ isActive }) => isActive ? "active-link" : ""} onClick={() => setToggleMenu(false)}>CONTACT</NavLink>
                 </li>
               </ul>
               <button className="custom__button app__navbar-smallscreen-btn">
-                <NavLink to="/" className={({ isActive }) => isActive ? "active-link" : ""}>DELIVERY / PICK UP</NavLink>
+                <NavLink to="/" className={({ isActive }) => isActive ? "active-link" : ""} onClick={() => setToggleMenu(false)}>DELIVERY / PICK UP</NavLink>
               </button>
             </div>
           )}

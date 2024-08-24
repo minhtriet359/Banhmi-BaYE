@@ -2,29 +2,27 @@ import Feature from "../components/Home/Feature/Feature";
 import Gallery from "../components/Gallery/Gallery";
 import MenuOverview from "../components/Home/MenuOverview/MenuOverview";
 import ViewGallery from "../components/Home/ViewGallery/ViewGallery";
-import img1 from '../assets/gallery-1.png';
-import img2 from '../assets/gallery-2.png';
-import img3 from '../assets/gallery-3.png';
-import img4 from '../assets/gallery-4.png';
-import img5 from '../assets/gallery-5.jpg';
 import ParallaxSection from "../components/ParallaxSection/ParallaxSection";
 import ContactForm from "../components/ContactForm/ContactForm";
-import Footer from "../components/Footer/Footer";
+import images from '../constants/galleryimages';
+import Hero from "../components/Hero/Hero";
+import { NavLink } from "react-router-dom";
 
-const images = [
-  {src: img1, alt: "gallery-photo-1"},
-  {src: img2, alt: "gallery-photo-2"},
-  {src: img3, alt: "gallery-photo-3"},
-  {src: img4, alt: "gallery-photo-4"},
-  {src: img5, alt: "gallery-photo-5"},
-]
 
 const HomePage = () => {
+  const homeGalleryImages = images.slice(0,5);
   return <>
+    <Hero isHomePage={true}>
+      <h2 className='p__greatvibes'>Every bite is a delight!!!</h2>
+      <h1 className='headtext__montserrat'>BÁNH MÌ BA-YE</h1>
+      <button className="custom__button app__hero-btn">
+        <NavLink to="/">VIEW OUR MENU</NavLink>
+      </button>
+    </Hero>
     <Feature/>
     <ViewGallery/>
     <MenuOverview/>
-    <Gallery images={images} isHomePage={true}/>
+    <Gallery images={homeGalleryImages} isHomePage={true}/>
     <ParallaxSection>
       <ContactForm isHomePage={true}/>
     </ParallaxSection>

@@ -8,10 +8,10 @@ interface Image{
 
 type Props = {
   images: Image[];
-  isHomePage: boolean;
+  isHomePage?: boolean;
 }
 
-const Gallery = ({images, isHomePage}: Props) => {
+const Gallery = ({images, isHomePage = false}: Props) => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 

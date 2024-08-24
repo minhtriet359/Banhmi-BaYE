@@ -8,8 +8,8 @@ main{
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   flex: 1 1 0%;
 }
 
@@ -21,7 +21,8 @@ main{
 
 
 .section__padding {
-  padding: 4rem 6rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .flex__center {
@@ -149,35 +150,11 @@ main{
 
 @media screen and (max-width: 850px) {
   .section__padding {
-    padding: 4rem;
+    padding: 6rem 1rem;
   }
 
   .headtext__montserrat {
     font-size: 2rem;
     line-height: 70px;
   }
-}
-
-@media screen and (max-width: 650px) {
-  .section__padding {
-    padding: 4rem 2rem;
-  }
-  
-  /* .p__greatvibes {
-    font-size: 21px;
-  }
-
-  .p__montserrat {
-    font-size: 14px;
-  } */
-}
-
-@media screen and (max-width: 450px) {
-  /* .p__montserrat {
-    font-size: 12px;
-  }
-
-  .p__greatvibes {
-    font-size: 19px;
-  } */
 }
