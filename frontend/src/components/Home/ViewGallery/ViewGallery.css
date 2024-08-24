@@ -1,5 +1,5 @@
 .app__home-view-gallery {
-  width: 100vw;
+  width: 100%;
   background-color: var(--color-brown);
 }
 
