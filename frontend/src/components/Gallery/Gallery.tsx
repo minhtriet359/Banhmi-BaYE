@@ -8,10 +8,10 @@ interface Image{
 
 type Props = {
   images: Image[];
-  overview: boolean;
+  isHomePage: boolean;
 }
 
-const Gallery = ({images, overview}: Props) => {
+const Gallery = ({images, isHomePage}: Props) => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -27,7 +27,7 @@ const Gallery = ({images, overview}: Props) => {
   const goToNext = ()=> setCurrentIndex((currentIndex+1)%images.length);
 
   return (
-  <section className={`app__gallery ${overview ? 'app__gallery-overview' : ''}`}>
+  <section className={`app__gallery ${isHomePage ? 'app__gallery-overview' : ''}`}>
     {images.map((image, index)=>(
       <div className='app__gallery-thumbnail-container'>
         <img key={index} src={image.src} alt={image.alt} onClick={()=>openLightbox(index)} className='app__gallery-thumbnail'/>

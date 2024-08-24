@@ -31,7 +31,7 @@
 
 .app__hero-content {
   position: relative; /* Positioned relative to ensure it's above the video */
-  z-index: 2; /* Places the content above the video */
+  z-index: 3; /* Places the content above the video */
   width: 100%;
   text-align: center;
 }

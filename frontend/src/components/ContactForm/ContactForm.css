@@ -1,0 +1,61 @@
+.app__contact-form-content{
+  width:50%;
+  text-align: left;
+}
+
+.app__contact-form-content h1{
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.app__contact-form input,
+.app__contact-form textarea
+{
+  width: 100%;
+  max-width: 100%;
+  height: 3rem;
+  margin: 0.5rem 0;
+  padding: 0.6rem;
+  font-size: 1rem;
+  color: var(--color-gray);
+  border: none;
+  border-radius: 5px;
+}
+
+.app__contact-form textarea{
+  min-height: 8rem;
+  max-height: 25rem;
+}
+
+.app__contact-form input:focus,
+.app__contact-form textarea:focus{
+  border: none;
+  outline: none;
+}
+
+.app__contact-form-btn{
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  margin-top: 1rem;
+  background-color: var(--color-brown);
+  border: none;
+  transition: 0.5s ease;
+}
+
+.app__contact-form-btn:hover{
+  background-color: rgb(68, 23, 23);
+}
+
+@media screen and (max-width: 850px) {
+  .app__contact-form-content h1{
+    font-size: 1.8rem;
+    margin-bottom: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 650px){
+  .app__contact-form-content{
+    width:100%;
+  }
+}

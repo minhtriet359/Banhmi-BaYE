@@ -7,6 +7,8 @@ import img2 from '../assets/gallery-2.png';
 import img3 from '../assets/gallery-3.png';
 import img4 from '../assets/gallery-4.png';
 import img5 from '../assets/gallery-5.jpg';
+import ParallaxSection from "../components/ParallaxSection/ParallaxSection";
+import ContactForm from "../components/ContactForm/ContactForm";
 
 const images = [
   {src: img1, alt: "gallery-photo-1"},
@@ -21,7 +23,10 @@ const HomePage = () => {
     <Feature/>
     <ViewGallery/>
     <MenuOverview/>
-    <Gallery images={images} overview={true}/>
+    <Gallery images={images} isHomePage={true}/>
+    <ParallaxSection>
+      <ContactForm isHomePage={true}/>
+    </ParallaxSection>
   </>
 }
 
