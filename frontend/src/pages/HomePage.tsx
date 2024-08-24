@@ -9,6 +9,7 @@ import img4 from '../assets/gallery-4.png';
 import img5 from '../assets/gallery-5.jpg';
 import ParallaxSection from "../components/ParallaxSection/ParallaxSection";
 import ContactForm from "../components/ContactForm/ContactForm";
+import Footer from "../components/Footer/Footer";
 
 const images = [
   {src: img1, alt: "gallery-photo-1"},

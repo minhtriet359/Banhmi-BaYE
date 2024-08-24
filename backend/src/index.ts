@@ -25,8 +25,8 @@ app.get("/test", async (req: Request, res: Response) => {
 
 // Handle form submission
 app.post('/submit-form', (req: Request, res: Response) => {
-    const { name, email, message } = req.body;
-    if (!name || !email || !message) {
+    const { name, phone, email, message } = req.body;
+    if (!name || !phone || !email || !message) {
         return res.status(400).send('Missing required fields');
     }
     const transporter: Transporter = nodemailer.createTransport({
@@ -40,7 +40,7 @@ app.post('/submit-form', (req: Request, res: Response) => {
         from: email,
         to: process.env.EMAIL_ADDRESS as string,
         subject: `New message from ${name}`,
-        text: message,
+        text: `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nMessage: ${message}`,
     };
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {

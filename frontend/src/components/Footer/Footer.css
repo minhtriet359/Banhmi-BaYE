@@ -1,0 +1,35 @@
+.app__footer-upper{
+  background-color: rgb(232, 243, 237);
+  padding-bottom: 5rem;
+  gap: 2rem;
+}
+
+.app__footer-upper-section{
+  gap: 1rem;
+  padding-top: 3rem;
+}
+
+.app__footer-section-content{
+  max-width: 22rem;
+}
+
+.app__footer-lower{
+  color: var(--color-gray);
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.app__footer-upper-section-logo{
+  width: 100px;
+}
+
+@media screen and (max-width: 850px){
+  .app__footer-upper .container{
+    display: block;
+  }
+
+  .app__footer-upper .app__footer-upper-section{
+    justify-content: flex-start;
+  }
+}
