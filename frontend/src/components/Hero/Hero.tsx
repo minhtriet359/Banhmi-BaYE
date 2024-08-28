@@ -10,7 +10,7 @@ const Hero = ({isHomePage = false, children} : Props) => {
   return (
     <section className={`app__hero custom-border ${isHomePage?'app__hero-homepage':''}`}>
       <div className='app__hero-video-container'>
-        <video src={videoBg} autoPlay loop muted className="app__hero-video" />
+        <video src={videoBg} autoPlay loop muted playsInline className="app__hero-video" />
       </div>
       <div className='app__hero-overlay custom-border'></div>
       <div className='container app__hero-content'>

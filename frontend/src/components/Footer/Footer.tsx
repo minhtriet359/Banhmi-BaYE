@@ -26,7 +26,7 @@ const Footer = () => {
             <img src={emailIcon} alt='phone-icon'/>
             <div className='app__footer-section-content'>
               <p className='p__montserrat'><strong>EMAIL</strong></p>
-              <p className='p__montserrat'>service@banhmibaye.com</p>
+              <p className='p__montserrat'>Service@banhmiba-ye.com</p>
             </div>
           </div>
         </div>
