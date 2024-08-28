@@ -4,7 +4,7 @@ import HomePage from "./pages/HomePage";
 import GalleryPage from "./pages/GalleryPage";
 import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage/AboutPage";
-import MenuPage from "./pages/MenuPage";
+import MenuPage from "./pages/MenuPage/MenuPage";
 
 const AppRoutes = () =>{
   return (
