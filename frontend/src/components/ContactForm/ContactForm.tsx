@@ -21,7 +21,7 @@ const ContactForm = ({isHomePage = false}: Props) => {
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) =>{
     e.preventDefault();
-    const response = await fetch('http://localhost:7000/submit-form',{
+    const response = await fetch('https://banhmi-baye.onrender.com/submit-form',{
       method: 'POST',
       headers: {
         'Content-Type' : 'application/json',
