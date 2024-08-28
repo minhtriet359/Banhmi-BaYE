@@ -32,6 +32,7 @@
 }
 
 .app__hero video {
+  pointer-events: none;
   position: absolute;
   top: 50%;
   left: 50%;
