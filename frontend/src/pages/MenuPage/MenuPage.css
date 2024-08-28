@@ -1,0 +1,83 @@
+.app__menu{
+  flex-direction: column;
+}
+
+.app__menu-buttons-container {
+  list-style-type: none;
+  margin-bottom: 2rem;
+}
+
+.app__menu-buttons-container li{
+  padding-right: 2rem;
+}
+
+.app__menu-buttons-container button{
+  background-color: transparent;
+  border: 3px solid transparent;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--color-grey);
+  cursor: pointer;
+  padding-top: 5px;
+  transition: 0.3s ease;
+}
+
+.app__menu-buttons-container button:hover{
+  border-top: 3px solid var(--color-brown);
+}
+
+.app__menu-buttons-container .active{
+  border-top: 3px solid var(--color-brown);
+  color: var(--color-black);
+}
+
+.app__menu-tab{
+  width: 100%;
+  gap: 2rem;
+  align-items: start;
+}
+
+.app__menu-page{
+  flex: 1;
+  max-width: 60%;
+  max-width: 600px;
+  background-color: var(--color-golden);
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.app__menu-tab img{
+  width:100%;
+  aspect-ratio: 2;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.app__menu-page h1{
+  text-align: center;
+  font-weight: 700;
+  color: var(--color-brown);
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.app__menu-page-item{
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 1.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 700;
+  border-bottom: 1px dashed white;
+}
+
+@media screen and (max-width:650px) {
+  .app__menu-tab{
+    display: block;
+  }
+
+  .app__menu-buttons-container button{
+    font-size: 1rem;
+  }
+}

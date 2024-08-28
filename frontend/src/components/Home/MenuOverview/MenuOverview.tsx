@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import banhmi from '../../../assets/menu-banhmi.jpg'
-import drinks from '../../../assets/menu-drinks.jpeg'
+import drinks from '../../../assets/menu-coffee.jpeg'
 import pastries from '../../../assets/menu-pastries.webp'
 import './MenuOverview.css'
 

@@ -3,7 +3,7 @@ import Layout from "./layouts/layout";
 import HomePage from "./pages/HomePage";
 import GalleryPage from "./pages/GalleryPage";
 import ContactPage from "./pages/ContactPage";
-import AboutPage from "./pages/AboutPage";
+import AboutPage from "./pages/AboutPage/AboutPage";
 import MenuPage from "./pages/MenuPage";
 
 const AppRoutes = () =>{

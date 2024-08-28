@@ -1,5 +1,5 @@
-import Hero from "../components/Hero/Hero";
-import bayeLogo from '../assets/logo-with-slogan.png'
+import Hero from "../../components/Hero/Hero";
+import bayeLogo from '../../assets/logo-with-slogan.png'
 import './AboutPage.css'
 
 const AboutPage = () => {
