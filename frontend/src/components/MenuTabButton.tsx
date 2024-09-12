@@ -4,7 +4,7 @@ type Props={
   onSelect: ()=> void;
 };
 
-export default function TabButton({children, isSelected, onSelect}:Props){
+export default function MenuTabButton({children, isSelected, onSelect}:Props){
   return (<li>
       <button className={`p__montserrat ${isSelected?"active":""}`} onClick={onSelect}>{children}</button>
     </li>);

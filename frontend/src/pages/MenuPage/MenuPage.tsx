@@ -1,8 +1,9 @@
 import { useState } from "react";
 import './MenuPage.css'
 import Hero from "../../components/Hero/Hero";
-import TabButton from "../../components/TabButton";
+import MenuTabButton from "../../components/MenuTabButton";
 import {MENU, MenuItem} from '../../constants/menu'
+import MenuTabs from "../../components/MenuTabs/MenuTabs";
 
 
 const MenuPage = () => {
@@ -51,14 +52,15 @@ const MenuPage = () => {
     <>
       <Hero><h1 className="headtext__montserrat">OUR MENU</h1></Hero>
       <section className="app__menu container section__padding flex__center">
-        <menu className="flex__center app__menu-buttons-container">
-        {MENU.map((section) => (
-          <TabButton key={section.name} isSelected={selectedCategory === section.name} 
-                    onSelect={() => handleSelect(section.name)}>
-            {section.name}
-          </TabButton>))}
-        </menu>
+        <MenuTabs
+          buttons={MENU.map((section) => (
+            <MenuTabButton key={section.name} isSelected={selectedCategory === section.name} 
+                      onSelect={() => handleSelect(section.name)}>
+              {section.name}
+            </MenuTabButton>
+        ))}>
         {tabContent}
+        </MenuTabs>
       </section>
     </>);
 }

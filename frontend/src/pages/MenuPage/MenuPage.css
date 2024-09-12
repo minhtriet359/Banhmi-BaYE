@@ -2,35 +2,6 @@
   flex-direction: column;
 }
 
-.app__menu-buttons-container {
-  list-style-type: none;
-  margin-bottom: 2rem;
-}
-
-.app__menu-buttons-container li{
-  padding-right: 2rem;
-}
-
-.app__menu-buttons-container button{
-  background-color: transparent;
-  border: 3px solid transparent;
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: var(--color-grey);
-  cursor: pointer;
-  padding-top: 5px;
-  transition: 0.3s ease;
-}
-
-.app__menu-buttons-container button:hover{
-  border-top: 3px solid var(--color-brown);
-}
-
-.app__menu-buttons-container .active{
-  border-top: 3px solid var(--color-brown);
-  color: var(--color-black);
-}
-
 .app__menu-tab{
   width: 100%;
   gap: 2rem;
