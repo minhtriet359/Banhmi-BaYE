@@ -1,0 +1,175 @@
+.app__order{
+  align-items: start;
+}
+
+.app__order-left-section{
+  width: 75%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.app__order-right-section{
+  width: 25%;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.app__order-menu{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+}
+
+.app__order-menu-item{
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding-bottom: 1rem;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.app__order-menu-item img{
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.app__order-menu-item h1{
+  font-size: 1.1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.app__order-menu-item p{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.app__order-menu-item button, .app__order-summary button{
+  background: linear-gradient(to bottom, rgb(210, 165, 86) 50%, transparent 50%);
+  background-size: 100% 200%;
+  background-position: 0 0%;
+  transition: background-position 0.5s ease;
+  color: white;
+  width: 60%;
+}
+
+.app__order-menu-item button{
+  margin-top: auto;
+  width: 80%;
+}
+
+.app__order-account{
+  width: 100%;
+  min-height: 10rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.app__order-account .p__greatvibes{
+  font-size: 2rem;
+  color: var(--color-golden);
+}
+
+.app__order-account .account-button{
+  top: 1rem;
+  right: 1rem;
+  position: absolute;
+  background-color: white;
+  border: none;
+  padding: 0;
+  color: black;
+  cursor: pointer;
+}
+
+.login-button {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 2.5rem;
+  right: 0;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensures it appears on top of other content */
+  min-width: 10rem; /* Adjust as needed */
+}
+
+.dropdown-item {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: black;
+  text-align: left;
+  background: white;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0; /* Light hover effect */
+}
+
+.app__order-summary{
+  width: 100%;
+  min-height: 20rem;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  text-align: center;
+}
+
+.app__order-summary h1{
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.app__order-summary p{
+  color: var(--color-grey);
+  margin: 2rem 0rem;
+}
+
+.app__order-summary button{
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+}
+
+.app__order-menu-item button:hover, .app__order-summary button:hover {
+  background-position: 0 100%;
+  color: rgb(210, 165, 86);
+  border: 1px solid rgb(210, 165, 86);
+}
+
+
+@media screen and (max-width:1280px){
+  .app__order-menu{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width:768px){
+  .app__order-right-section{
+    display: none;
+  }
+
+  .app__order-left-section{
+    width: 100%;
+    padding: 0;
+  }
+
+  .app__order-menu{
+    row-gap: 1rem;
+    column-gap: 1rem;
+  }
+}

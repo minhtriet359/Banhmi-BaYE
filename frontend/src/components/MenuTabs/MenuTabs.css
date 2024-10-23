@@ -26,3 +26,9 @@
   border-top: 3px solid var(--color-brown);
   color: var(--color-black);
 }
+
+@media screen and (max-width: 768px) {
+  .app__menu-buttons-container button{
+    font-size: 1rem;
+  }
+}

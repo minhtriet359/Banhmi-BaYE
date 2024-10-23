@@ -51,7 +51,7 @@ const Navbar = () => {
           </li>
         </ul>
         <button className="custom__button app__navbar-btn">
-          <NavLink to="/" className={({ isActive }) => isActive ? "active-link" : ""}>DELIVERY / PICK UP</NavLink>
+          <NavLink to="/order-online" className={({ isActive }) => isActive ? "active-link" : ""}>DELIVERY / PICK UP</NavLink>
         </button>
         <div className='app__navbar-smallscreen'>
           <GiHamburgerMenu color="#fff" fontSize={27} style={{ cursor: 'pointer' }} onClick={() => setToggleMenu(true)} />
@@ -76,7 +76,7 @@ const Navbar = () => {
                 </li>
               </ul>
               <button className="custom__button app__navbar-smallscreen-btn">
-                <NavLink to="/" className={({ isActive }) => isActive ? "active-link" : ""} onClick={() => setToggleMenu(false)}>DELIVERY / PICK UP</NavLink>
+                <NavLink to="/order-online" className={({ isActive }) => isActive ? "active-link" : ""} onClick={() => setToggleMenu(false)}>DELIVERY / PICK UP</NavLink>
               </button>
             </div>
           )}

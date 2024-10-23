@@ -47,8 +47,4 @@
   .app__menu-tab{
     display: block;
   }
-
-  .app__menu-buttons-container button{
-    font-size: 0.9rem;
-  }
 }

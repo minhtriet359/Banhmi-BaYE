@@ -5,6 +5,7 @@ import GalleryPage from "./pages/GalleryPage";
 import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import MenuPage from "./pages/MenuPage/MenuPage";
+import OrderPage from "./pages/OrderPage/OrderPage";
 
 const AppRoutes = () =>{
   return (
@@ -15,6 +16,7 @@ const AppRoutes = () =>{
       <Route path="/gallery" element={<Layout><GalleryPage/></Layout>}/>
       <Route path="/menu" element={<Layout><MenuPage/></Layout>}/>
       <Route path="/contact" element={<Layout><ContactPage/></Layout>}/>
+      <Route path="/order-online" element={<Layout><OrderPage/></Layout>}/>
       <Route path="*" element={<Navigate to="/"/>}/>
     </Routes>)
 }
