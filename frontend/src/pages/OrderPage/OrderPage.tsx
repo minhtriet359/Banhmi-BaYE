@@ -2,7 +2,7 @@ import {useState} from "react";
 import Hero from "../../components/Hero/Hero";
 import MenuTabButton from "../../components/MenuTabButton";
 import MenuTabs from "../../components/MenuTabs/MenuTabs";
-import {MENU, MenuItem} from '../../constants/menu'
+import {MENU} from '../../constants/menu'
 import cart from '../../assets/cart.png'
 import './OrderPage.css'
 
